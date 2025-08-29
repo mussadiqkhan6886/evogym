@@ -18,3 +18,17 @@
   --font-montserrat: "Montserrat", "sans-serif";
 }
 
+.center{
+  @apply flex justify-center items-center
+}
+.between{
+  @apply  justify-between items-center
+}
+
+.padding-main{
+  @apply lg:px-28 md:px-20 px-10
+}
+
+.link{
+  @apply hover:text-primary-300 duration-400 transition-all ease-in-out
+}

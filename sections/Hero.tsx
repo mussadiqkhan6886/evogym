@@ -1,0 +1,37 @@
+import Image from "next/image"
+import homeImage from "../public/HomePageGraphic.png"
+import homeTitle from "../public/HomePageText.png"
+import ActionButton from "@/components/ActionButton"
+import backgroundImage from "../public/EvolveText.png"
+import Button from "@/components/Button"
+import redBull from "../public/SponsorRedBull.png"
+import forbes from "../public/SponsorForbes.png"
+import fortune from "../public/SponsorFortune.png"
+
+const Hero = () => {
+  return (
+    <section className="pt-20 md:pt-30 lg:pt-20 h-full">
+        <div className="flex lg:items-center justify-between h-full flex-col gap-5 lg:flex-row z-10">
+            <div className="relative flex flex-col gap-5 lg:w-1/2">
+                <Image src={backgroundImage} alt="background hero image" width={500} height={100} className="absolute -z-20 -top-[10000px] lg:-top-12 -left-12" />
+                <Image src={homeTitle} alt="Title Main heading image" width={400} height={100} className="-z-10" />
+                <p className="text-base text-gray-500 -z-10">Unrivaled Gym. Unparallel Training Fitness Classes. World Class Studios to get the Body Shapes That you Dream of... Get Your Dream Body Now.</p>
+                <div className="flex gap-5 -z-10">
+                    <ActionButton text="Join Now" />
+                    <Button text="Learn More" />
+                </div>
+            </div>
+            <div className="center">
+                <Image src={homeImage} width={450} height={300} alt="hero image main" />
+            </div>
+      </div>
+      <div className="bg-primary-100 w-full absolute left-0 py-10 px-20 md:justify-center gap-20 hidden md:flex">
+        <Image src={redBull} alt="Redbull Image" width={80} height={80} />
+        <Image src={forbes} alt="Forbes Image" width={80} height={80} />
+        <Image src={fortune} alt="Fortune Image" width={80} height={80} />
+      </div>
+    </section>
+  )
+}
+
+export default Hero
