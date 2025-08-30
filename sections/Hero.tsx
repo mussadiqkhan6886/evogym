@@ -11,7 +11,7 @@ import fortune from "../public/SponsorFortune.png"
 const Hero = () => {
   return (
     <section className="pt-20 md:pt-30 lg:pt-20 h-full">
-        <div className="flex lg:items-center justify-between h-full flex-col gap-5 lg:flex-row z-10">
+        <div className="flex lg:items-center justify-between h-full pb-10 flex-col gap-5 lg:flex-row z-10">
             <div className="relative flex flex-col gap-5 lg:w-1/2">
                 <Image src={backgroundImage} alt="background hero image" width={500} height={100} className="absolute -z-20 -top-[10000px] lg:-top-12 -left-12" />
                 <Image src={homeTitle} alt="Title Main heading image" width={400} height={100} className="-z-10" />
@@ -25,10 +25,10 @@ const Hero = () => {
                 <Image src={homeImage} width={450} height={300} alt="hero image main" />
             </div>
       </div>
-      <div className="bg-primary-100 w-full absolute left-0 py-10 px-20 md:justify-center gap-20 hidden md:flex">
-        <Image src={redBull} alt="Redbull Image" width={80} height={80} />
-        <Image src={forbes} alt="Forbes Image" width={80} height={80} />
-        <Image src={fortune} alt="Fortune Image" width={80} height={80} />
+      <div className="bg-primary-100 w-full absolute left-0 items-center px-20 md:justify-center gap-30 py-10 hidden md:flex">
+        <Image src={redBull} alt="Redbull Image" width={70} height={80} />
+        <Image src={forbes} alt="Forbes Image" className="h-7" width={100} height={80} />
+        <Image src={fortune} alt="Fortune Image" className="h-7" width={100} height={80} />
       </div>
     </section>
   )
