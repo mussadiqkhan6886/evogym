@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion"
 import Hero from "@/sections/Hero";
 import Benefits from "@/sections/Benefits";
+import Classes from "@/sections/Classes";
 
 const Home = () => {
 
@@ -27,6 +28,7 @@ const Home = () => {
       <main className="padding-main">
         <Hero />
         <Benefits />
+        <Classes />
       </main>
       <footer>
 

@@ -16,6 +16,7 @@
   --color-secondary-500: #FFC132;
   --font-dmsans: "DM Sans", "sans-serif";
   --font-montserrat: "Montserrat", "sans-serif";
+  --breakpoint-xs: (max-width: "450px")
 }
 
 .center{

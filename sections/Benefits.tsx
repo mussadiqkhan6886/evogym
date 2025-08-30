@@ -11,7 +11,7 @@ const Benefits = () => {
   return (
     <section id='benefits' className='md:pt-40 sm:pt-15 flex flex-col gap-20'>
       <section className='flex flex-col gap-10'>
-        <article className='w-3/4'>
+        <article className='w-full md:w-3/4'>
             <h3 className='font-bold text-gray-500 text-3xl mb-2'>MORE THEN JUST GYM.</h3>
             <p className='text-gray-500'>We Provide world class fitness equipment, trainers and classes to get you to your ultimate fitness goals with ease. We Provide true care into each and every member</p>
         </article>
@@ -24,8 +24,8 @@ const Benefits = () => {
       <section className='flex flex-col lg:flex-row center gap-9'>
             <Image src={benefitsImage} width={400} height={400} alt='benefits image main' />
             <div className='relative'>
-                <Image src={waves} width={100} height={100} alt='abstract waves' className='absolute -left-8  -top-16 sm:-left-13' />
-                <Image src={sparks} width={100} height={100} alt='sparks' className='absolute -bottom-10 right-15' />
+                <Image src={waves} width={90} height={100} alt='abstract waves' className='absolute -left-8 -top-13  sm:-top-16 sm:-left-13' />
+                <Image src={sparks} width={90} height={100} alt='sparks' className='absolute -bottom-10 right-0 sm:right-15' />
                 <h4 className='font-bold text-2xl uppercase text-gray-500'>Millions of happy members getting <span className='text-primary-500'>fit</span> </h4>
                 <div className='text-gray-500'>
                     <p className="my-5 ">

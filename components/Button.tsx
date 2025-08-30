@@ -6,7 +6,7 @@ type Props = {
 
 const Button = (props: Props) => {
   return (
-    <button className='cursor-pointer border border-gray-500 px-5 rounded-lg py-2 text-gray-500'>{props.text}</button>
+    <button className='cursor-pointer border border-gray-500 px-5 rounded-lg py-1 sm:py-2 text-gray-500'>{props.text}</button>
   )
 }
 
