@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar"
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion"
 import Hero from "@/sections/Hero";
+import Benefits from "@/sections/Benefits";
 
 const Home = () => {
 
@@ -25,6 +26,7 @@ const Home = () => {
       </motion.header>
       <main className="padding-main">
         <Hero />
+        <Benefits />
       </main>
       <footer>
 
