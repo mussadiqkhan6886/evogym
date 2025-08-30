@@ -9,7 +9,7 @@ import waves from "../public/AbstractWaves.png"
 
 const Benefits = () => {
   return (
-    <section id='benefits' className='md:pt-40 sm:pt-15 flex flex-col gap-20'>
+    <section id='benefits' className='padding-main md:pt-40 mb=10 sm:pt-15 flex flex-col gap-20'>
       <section className='flex flex-col gap-10'>
         <article className='w-full md:w-3/4'>
             <h3 className='font-bold text-gray-500 text-3xl mb-2'>MORE THEN JUST GYM.</h3>
@@ -21,7 +21,7 @@ const Benefits = () => {
             ))}
         </div>
       </section>
-      <section className='flex flex-col lg:flex-row center gap-9'>
+      <section className='flex flex-col mb-15 lg:flex-row center gap-9'>
             <Image src={benefitsImage} width={400} height={400} alt='benefits image main' />
             <div className='relative'>
                 <Image src={waves} width={90} height={100} alt='abstract waves' className='absolute -left-8 -top-13  sm:-top-16 sm:-left-13' />

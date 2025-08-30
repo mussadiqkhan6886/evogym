@@ -2,10 +2,12 @@
 
 import NavBar from "@/components/NavBar"
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion"
+import { motion, Variants } from "framer-motion"
 import Hero from "@/sections/Hero";
 import Benefits from "@/sections/Benefits";
 import Classes from "@/sections/Classes";
+import Contact from "@/sections/Contact";
+import Footer from "@/sections/Footer";
 
 const Home = () => {
 
@@ -20,18 +22,28 @@ const Home = () => {
     }
   }, [selectedPage])
 
+  const navBarVariant = {
+    hidden: {
+      opacity: 0
+    },
+    show: {
+      opacity: 1
+    }
+  }
+
   return (
     <>
-      <motion.header id="home" className={`${top ? "" : "bg-primary-100"} padding-main fixed w-full top-0`}>
+      <motion.header variants={navBarVariant} initial="hidden" whileInView={"show"} id="home" className={`${top ? "" : "bg-primary-100"} padding-main fixed w-full top-0`}>
         <NavBar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       </motion.header>
-      <main className="padding-main">
+      <main>
         <Hero />
         <Benefits />
         <Classes />
+        <Contact />
       </main>
       <footer>
-
+        <Footer />
       </footer>
     </>
   )

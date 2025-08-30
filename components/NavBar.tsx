@@ -22,10 +22,10 @@ const NavBar = ({selectedPage, setSelectedPage} : Props) => {
     }
 
   return (
-    <nav className='py-4 flex between'>
+    <nav className='py-4 flex z-50 between'>
         <div className='md:w-1/5 w-full mr-3'>
             <h1>
-                <Image src={Logo} alt='logo image' width={120} height={100}  />
+                <Image src={Logo} alt='logo image' width={120} height={100} className='z-50'  />
             </h1>
         </div>
         <div className='md:flex hidden between  w-full text-gray-500'>
