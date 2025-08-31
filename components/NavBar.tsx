@@ -45,7 +45,7 @@ const NavBar = ({selectedPage, setSelectedPage} : Props) => {
             <div className='fixed z-50 right-0 px-10 top-0 w-full bg-primary-100 text-gray-500 text-lg'>
                 <button className='w-8 h-8 bg-primary-300 rounded-full absolute right-10 top-4 cursor-pointer hover:text-primary-100 transition-all duration-500' onClick={handleClick}>X</button>
                 <div>
-                    <ul className='between mt-15 mb-2 flex gap-3 md:gap-5 text-sm'>
+                    <ul className='between mt-15 mb-2 flex gap-3  md:gap-5 text-sm'>
                         <Navigation selectedPage={selectedPage} />
                     </ul>
                 </div>

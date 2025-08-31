@@ -2,19 +2,30 @@ import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 
 type Props = {
-    name: string
-    description: string
-    image: StaticImageData
+  name: string
+  description: string
+  image: StaticImageData
 }
 
-const ClassCard = (props: Props) => {
+const ClassCard = ({ name, description, image }: Props) => {
   return (
-    <div className='w-[300px] h-[200px] '>
-        <div className='absolute w-[300px] opacity-0 bg-primary-100 hover:opacity-75 duration-300  cursor-pointer'>
-            <h4>{props.name}</h4>
-            <p>{props.description}</p>
-        </div>
-        <Image src={props.image} alt={props.name} width={500} className='inline'  height={300} />
+    <div className="relative w-[300px] h-[200px] shrink-0 rounded-lg overflow-hidden">
+      {/* Hover overlay */}
+      <div className="absolute inset-0 flex flex-col justify-center items-center 
+                      bg-primary-100 opacity-0 hover:opacity-80 transition-opacity 
+                      duration-300 text-center p-4 cursor-pointer">
+        <h4 className="font-bold text-lg">{name}</h4>
+        <p className="text-sm mt-2">{description}</p>
+      </div>
+
+      {/* Background Image */}
+      <Image
+        src={image}
+        alt={name}
+        width={300}
+        height={200}
+        className="object-cover w-full h-full"
+      />
     </div>
   )
 }

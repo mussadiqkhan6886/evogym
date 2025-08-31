@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-*{
-  font-family: var(--font-dmsans);
-}
 
 @theme {
   --color-gray-20: #F8F4EB;
@@ -16,7 +13,6 @@
   --color-secondary-500: #FFC132;
   --font-dmsans: "DM Sans", "sans-serif";
   --font-montserrat: "Montserrat", "sans-serif";
-  --breakpoint-xs: (max-width: "450px")
 }
 
 .center{
@@ -33,3 +29,25 @@
 .link{
   @apply hover:text-primary-300 duration-400 transition-all ease-in-out
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  height: 6px;              /* thin for horizontal */
+  width: 6px;               /* thin for vertical */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;  /* no background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ec4899; /* Tailwind pink-500 */
+  border-radius: 9999px;
+  box-shadow: 0 0 8px #ec4899; /* glow effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #db2777; /* darker pink on hover */
+  box-shadow: 0 0 12px #db2777; /* stronger glow */
+}
+

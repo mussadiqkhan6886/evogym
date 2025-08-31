@@ -14,10 +14,12 @@ const Classes = () => {
             enim mattis odio in risus nunc.
         </p>
       </article>
-      <div className='overflow-x-scroll flex  gap-7  px-3'>
-        {classes.map(classDiv => (
-            <ClassCard key={classDiv.name}  {...classDiv} />
-        ))}
+      <div className="overflow-x-auto">
+        <div className="flex gap-7 px-3 w-max">
+          {classes.map((classDiv) => (
+            <ClassCard key={classDiv.name} {...classDiv} />
+          ))}
+        </div>
       </div>
     </section>
   )

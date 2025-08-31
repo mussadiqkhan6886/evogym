@@ -16,7 +16,7 @@ const Hero = () => {
                 <Image src={backgroundImage} alt="background hero image" width={500} height={100} className="absolute -z-20 -top-[10000px] lg:-top-12 -left-12" />
                 <Image src={homeTitle} alt="Title Main heading image" width={400} height={100} className="-z-10" />
                 <p className="text-base text-gray-500 -z-10">Unrivaled Gym. Unparallel Training Fitness Classes. World Class Studios to get the Body Shapes That you Dream of... Get Your Dream Body Now.</p>
-                <div className="flex gap-5 flex-col xs:flex-row">
+                <div className="flex gap-5">
                     <ActionButton text="Join Now" />
                     <Button text="Learn More" />
                 </div>
