@@ -1,10 +1,11 @@
 import React from 'react'
 import { classes } from '@/constants'
 import ClassCard from '@/components/ClassCard'
+import { motion } from "framer-motion"
 
-const Classes = () => {
+const Classes = ({setSelectedPage}: {setSelectedPage: (page: string) => void}) => {
   return (
-    <section id='classes' className=' bg-primary-300 py-20'>
+    <motion.section onViewportEnter={() =>setSelectedPage("classes")} id='classes' className=' bg-primary-300 py-20'>
       <article className='padding-main mb-8 w-full md:w-3/4'>
         <h4 className='uppercase font-bold text-2xl text-gray-500'>our classes</h4>
         <p className="py-3">
@@ -21,7 +22,7 @@ const Classes = () => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

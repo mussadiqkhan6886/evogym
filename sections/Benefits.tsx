@@ -6,10 +6,11 @@ import benefitsImage from "../public/BenefitsPageGraphic.png"
 import ActionButton from '@/components/ActionButton'
 import sparks from "../public/Sparkles.png"
 import waves from "../public/AbstractWaves.png"
+import { motion } from "framer-motion"
 
-const Benefits = () => {
+const Benefits = ({setSelectedPage}: {setSelectedPage: (page: string) => void}) => {
   return (
-    <section id='benefits' className='padding-main md:pt-40 mb=10 sm:pt-15 flex flex-col gap-20'>
+    <motion.section onViewportEnter={() =>setSelectedPage("benefits")} id='benefits' className='padding-main md:pt-40 mb=10 sm:pt-15 flex flex-col gap-20'>
       <section className='flex flex-col gap-10'>
         <article className='w-full md:w-3/4'>
             <h3 className='font-bold text-gray-500 text-3xl mb-2'>MORE THEN JUST GYM.</h3>
@@ -46,7 +47,7 @@ const Benefits = () => {
                 <ActionButton text='Join Now' />
             </div>
       </section>
-    </section>
+    </motion.section>
   )
 }
 

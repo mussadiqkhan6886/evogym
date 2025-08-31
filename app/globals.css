@@ -3,6 +3,9 @@
 *{
   color: var(--color-gray-500)
 }
+html{
+  scroll-behavior: smooth;
+}
 
 @theme {
   --color-gray-20: #F8F4EB;
