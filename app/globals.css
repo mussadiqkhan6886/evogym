@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+*{
+  color: var(--color-gray-500)
+}
 
 @theme {
   --color-gray-20: #F8F4EB;
@@ -28,6 +31,9 @@
 
 .link{
   @apply hover:text-primary-300 duration-400 transition-all ease-in-out
+}
+.input{
+  @apply bg-primary-300 outline-none border border-primary-500 py-2 px-3 placeholder:text-gray-500 text-gray-500 rounded placeholder:opacity-55
 }
 
 /* Custom Scrollbar */

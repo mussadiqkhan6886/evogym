@@ -9,9 +9,9 @@ type Props = {
 
 const ClassCard = ({ name, description, image }: Props) => {
   return (
-    <div className="relative w-[300px] h-[200px] shrink-0 rounded-lg overflow-hidden">
+    <div className="relative pb-2 w-[300px] h-[200px] shrink-0 rounded-lg overflow-hidden">
       {/* Hover overlay */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center 
+      <div className="h-[192px] absolute inset-0 flex flex-col justify-center items-center 
                       bg-primary-100 opacity-0 hover:opacity-80 transition-opacity 
                       duration-300 text-center p-4 cursor-pointer">
         <h4 className="font-bold text-lg">{name}</h4>
