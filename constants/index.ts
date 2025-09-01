@@ -1,26 +1,5 @@
-export const benefits = [
-  {
-    icon: "icon",
-    title: "State of the Art Facilities",
-    description:
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
-  },
-  {
-    icon: "icon",
-    title: "100's of Diverse Classes",
-    description:
-      "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
-  },
-  {
-    icon: "icon",
-    title: "Expert and Pro Trainers",
-    description:
-      "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
-  },
-];
-// <HomeModernIcon className="h-6 w-6" />,
-// <UserGroupIcon className="h-6 w-6" />,
-// <AcademicCapIcon className="h-6 w-6" />,
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { faHouse, faUserGroup, faShield } from "@fortawesome/free-solid-svg-icons";
 
 
 import image1 from "../public/image1.png";
@@ -29,6 +8,20 @@ import image3 from "../public/image3.png";
 import image4 from "../public/image4.png";
 import image5 from "../public/image5.png";
 import image6 from "../public/image6.png";
+
+interface Benefit {
+  icon: IconProp;
+  title: string;
+  description: string;
+}
+
+export const benefits: Benefit[] = [
+  { icon: faHouse, title: "State of the Art Facilities", description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et." },
+  { icon: faUserGroup, title: "100's of Diverse Classes", description: "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id." },
+  { icon: faShield, title: "Expert and Pro Trainers", description: "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient." },
+];
+
+
 
 
 export const classes = [

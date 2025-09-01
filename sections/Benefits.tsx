@@ -7,13 +7,14 @@ import ActionButton from '@/components/ActionButton'
 import sparks from "../public/Sparkles.png"
 import waves from "../public/AbstractWaves.png"
 import { motion } from "framer-motion"
+import Title from '@/components/Title'
 
 const Benefits = ({setSelectedPage}: {setSelectedPage: (page: string) => void}) => {
   return (
     <motion.section onViewportEnter={() =>setSelectedPage("benefits")} id='benefits' className='padding-main md:pt-40 mb=10 sm:pt-15 flex flex-col gap-20'>
       <section className='flex flex-col gap-10'>
         <article className='w-full md:w-3/4'>
-            <h3 className='font-bold text-gray-500 text-3xl mb-2'>MORE THEN JUST GYM.</h3>
+            <Title>MORE THEN JUST GYM.</Title>
             <p className='text-gray-500'>We Provide world class fitness equipment, trainers and classes to get you to your ultimate fitness goals with ease. We Provide true care into each and every member</p>
         </article>
         <div className='grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
