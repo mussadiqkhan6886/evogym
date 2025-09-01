@@ -41,8 +41,8 @@ html{
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  height: 6px;              /* thin for horizontal */
-  width: 6px;               /* thin for vertical */
+  height: 6px;             
+  width: 6px;               
 }
 
 ::-webkit-scrollbar-track {
